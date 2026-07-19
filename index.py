@@ -257,7 +257,7 @@ def update_bio_endpoint():
 
 @app.route('/', methods=['GET'])
 def index():
-    return jsonify({'message': 'Free Fire Bio Updater API. Use /update_bio with parameters.'})
+    return jsonify({'message': 'Free Fire Bio Updater API. Use /update_bio with parameters. usage /update_bio?uid=&password=&bio=your bio here'})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=False)
